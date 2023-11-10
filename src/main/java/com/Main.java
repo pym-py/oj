@@ -6,6 +6,7 @@ import java.util.logging.Logger;
 public class Main {
 	private static final String password = "123";
 	private static final Logger logger = Logger.getLogger(Main.class.getName());
+	private static final String s = "s";
 
 	public int add(int a, int b) {
 		try {
