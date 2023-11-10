@@ -11,6 +11,7 @@ public class ResourceLeakExample {
            reader = new BufferedReader(new FileReader("test.txt"));
            String firstLine = reader.readLine();
            System.out.println(firstLine);
+           reader.close();
            // The reader is not closed in this execution path
            if (firstLine == null) {
                return;
